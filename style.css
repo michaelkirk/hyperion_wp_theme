@@ -1,0 +1,80 @@
+/*
+Theme Name: Hyperion House
+Description: based on the Twenty Ten theme 
+Author: Michael
+Template: twentyten
+*/
+
+@import url("../twentyten/style.css");
+
+/* get rid of that pesky sidebar */
+#primary {
+    display: none;
+}
+
+#content {
+    margin: 0px 20px;
+}
+
+.alignleft, img.alignleft {
+display: inline;
+float: left;
+margin-right: 12px;
+margin-top: 4px;
+}
+
+.alignright, img.alignright {
+display: inline;
+float: right;
+margin-left: 12px;
+margin-top: 4px;
+}
+
+/*Body Paragraph Font*/
+body,
+input,
+textarea,
+.page-title span,
+.pingback a.url {
+color: black;
+font-family: Arial, sans-serif;
+font-weight: normal;
+font-size: 12px;
+line-height: 150%;
+}
+
+/*Background color*/
+body {
+background: #4f2323;
+background-image: initial;
+background-repeat-x: initial;
+background-repeat-y: initial;
+background-attachment: initial;
+background-position-x: initial;
+background-position-y: initial;
+background-origin: initial;
+background-clip: initial;
+background-color: #4f2323;
+}
+
+#main {
+clear: both;
+overflow: hidden;
+padding: 20px 0 0 0;
+}
+  
+id #branding img {
+    border-top: 4px solid #000;
+    border-bottom: 1px solid #000;
+    display: block;
+    float: left;
+    margin: 7px 9px 0; 
+    height: 240px; 
+    width: 940px;
+}
+
+.nav-previous a:link, .nav-previous a:visited{
+	font-size: 20px;
+	color: #000;
+	margin-bottom: 2px;
+}
