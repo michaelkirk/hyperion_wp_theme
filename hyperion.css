@@ -32,8 +32,8 @@ body {
 #menu { 
 	background: #719039;
 	height: 20px;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-top: 14px;
+	padding-bottom: 14px;
 	text-align: center;	
 	width: 100%;
 	margin-right: auto;
@@ -42,9 +42,12 @@ body {
 
 #menu a {
 	font-family: Arial Black, Arial, sans-serif;
-	font-size: 20px;
+	font-size: 22px;
+	font-weight: 900;
+	letter-spacing: 2px;	
 	color: white;
-	margin-left: 40px;
+	margin-left: 29px;
+	margin-top:5px;
 	text-decoration: none;
 		
 }
@@ -59,12 +62,57 @@ body {
 	height: 500px;
 }
 
-#project-photo {
-	width: 50%;
-	float: left;
+#project-box {
+	background: #2b3716;
+	height: 320px;
+	width: 950px;
+	margin-right:auto;
+	margin-left: auto;
+	padding-top: 15px;
+	padding-bottom: 15px;
 }
 
-#project-text {
-	width: 50%;
-	float: left;
+#project-box-text {
+	float:left;
+	width: 270px;
+	font-family: "Courier";
+	color: white;
+	margin-left: 15px;
 }
+	
+.project-box-image {
+	float:left;
+	margin-left: 15px;
+	position: relative; 
+}
+
+.project-box-image img{
+	opacity:0.6;
+ 	filter:alpha(opacity=60);
+}
+
+.project-box-image img:hover {
+	opacity:1.0;
+	filter:alpha(opacity=100);
+}
+
+.project-box-image span {
+	position: absolute;
+	background: #2b3716;
+	height: 30px;
+	width:200px;
+	color: white;
+	font-family: "Georgia";
+	font-weight: 900;
+	font-size: 20px;
+  	letter-spacing: 1px;
+	margin-left: auto;
+	margin-right: auto;
+	bottom: -10px;
+	padding-top: 10px;
+	text-align: center;
+	left: 0;
+	width: 100%;
+}
+
+
