@@ -1,3 +1,8 @@
+<?php
+/*
+Template Name: Hyperion Yard Blog Page
+*/
+?>
 <head>
   <!--Changes title in browser tab-->
   <title>Hyperion Yard</title>
@@ -20,5 +25,8 @@
 			<a href="/resources">RESOURCES</a>
 			<a href= "/blog">BLOG</a>
 		</div>
-
+	<div id= "menu-border">
+	</div>	
+	<div id= "blog-content">
+	</div>
 

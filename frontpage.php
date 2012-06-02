@@ -20,19 +20,15 @@ Template Name: Hyperion Yard Front Page
 		</div>
 		
 		<div id="menu">
-			<a href="/"> HOME
-			</a>
-			<a href="/about"> ABOUT
-			</a>
-			<a href="/resources"> PROJECTS
-			</a>
-			<a href="/projects"> RESOURCES
-			</a>
-			<a> BLOG </a>
+			<a href="/new-front-page/">HOME</a>
+			<a href="/about">ABOUT</a>
+			<a href="/newprojects">PROJECTS</a>
+			<a href="/resources">RESOURCES</a>
+			<a href= "/blog">BLOG</a>
 		</div>
 
 		<div id="upper-content">
-			<div id="project-box">							
+			<div id="project-box" class="content_column">							
 				<a href="/2011/11/22/a-place-to-grow-herbs/">
 					<div class="project-box-image">						
 						<img src="/wp-content/themes/hyperion/images/herbspiral.png"> 
@@ -54,12 +50,16 @@ Template Name: Hyperion Yard Front Page
 					</div> 
 				</a>
 					<div id="project-box-text">	
-			The Hyperion yard is a collection of projects. My name is Linnea and I live at Hyperion house along with two housemates. We are building off the work of friends who lived here before us, who first tried to wrangle the backyard into being a food producing entity. The bermuda grass is ever creeping, and I’d say we’ve had more failures than successes at this point, but my hope is to document what we are doing and learn from it in the best way we can. Welcome to Hyperion Yard.	
+			Hyperion Yard is a collection of urban sustainability projects focused on intensive food production, soil building and water stewardship. Based out of Los Angeles, Hyperion Yard is inspired by work from all over the world, and strives to provide a regularly updated catalog of these resources. Check out the Blog for recent updates and current projects. 
 					</div>				
 							
 			</div>		
 		</div>
-			
-	</div>
+		<div id="lower-content">
+			<div id="blog-content-title"><h2 class="content_column">RECENT UPDATES</h2></div>
+			<div id="blog-content" class="content_column">
+				<p> Blog content here</p>
+			</div>
+		</div>
 </body>
 

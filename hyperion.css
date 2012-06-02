@@ -7,7 +7,7 @@ body {
 	background-position: center;
 	background-repeat: no-repeat; 
 	background-color: #bcdf7d;
-	height: 245px;
+	height: 240px;
 	position: relative;
 }
 
@@ -46,40 +46,66 @@ body {
 	font-weight: 900;
 	letter-spacing: 2px;	
 	color: white;
-	margin-left: 29px;
-	margin-top:5px;
+	padding-left: 16px;
+	padding-right: 16px;
 	text-decoration: none;
-		
+}
+
+#menu a:hover{
+	color:black;
+	background-color:#bcdf7d;
+	padding-top: 10px;
+	padding-bottom: 7px;
+	margin-left: none;
+	margin-right: none;
+	padding-left: 16px;
+	padding-right: 16px;
+	border: none;
+
 }
 
 #menu a:first-child{
-	margin-left:0;
+	padding-left:15px;
 
 }
 
 #upper-content {
 	background: #719039;
-	height: 500px;
+	height: 370px;
+	margin: none;
+	padding-top: 5px;
 }
 
 #project-box {
-	background: #2b3716;
+	background: white;
 	height: 320px;
-	width: 950px;
-	margin-right:auto;
-	margin-left: auto;
 	padding-top: 15px;
 	padding-bottom: 15px;
 }
 
+.content_column {
+width: 955px;
+margin-left: auto;
+margin-right: auto;
+}
+
 #project-box-text {
 	float:left;
-	width: 270px;
-	font-family: "Courier";
-	color: white;
+	width: 260px;
+	font-family: "Helvetica";
+	font-size: 19px;
+	text-align: justify;
+	line-height: 27px;
+	color: black;
+	font-weight: 550;
 	margin-left: 15px;
-}
+	margin-top: -4px;		
+	display: block;
 	
+}
+
+
+
 .project-box-image {
 	float:left;
 	margin-left: 15px;
@@ -87,8 +113,10 @@ body {
 }
 
 .project-box-image img{
-	opacity:0.6;
- 	filter:alpha(opacity=60);
+	opacity:0.70;
+ 	filter:alpha(opacity=70);
+	border:solid black 3px;	
+
 }
 
 .project-box-image img:hover {
@@ -98,21 +126,77 @@ body {
 
 .project-box-image span {
 	position: absolute;
-	background: #2b3716;
-	height: 30px;
+	background: white;
+	height: 20px;
 	width:200px;
-	color: white;
+	color: black;
 	font-family: "Georgia";
 	font-weight: 900;
 	font-size: 20px;
   	letter-spacing: 1px;
 	margin-left: auto;
 	margin-right: auto;
-	bottom: -10px;
-	padding-top: 10px;
+	margin-top:5px;
+	padding-top: 5px;
 	text-align: center;
 	left: 0;
 	width: 100%;
+	
+}
+
+#lower-content {
+	background:white;
+}
+
+#blog-content {
+	background: white;
+	height: 600px;
+}
+
+#blog-content-title {
+	font-family: "Arial Black","Arial";
+	font-weight: 900;
+	font-size: 22px;
+	letter-spacing: 1px;
+	margin-left: none;
+	margin-top: none;
+	padding-top: 12px;
+	padding-bottom: 12px;	
+	background-color: #bcdf7d;	
+}
+
+#menu-border {
+	background: #bcdf7d;
+	height: 10px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#project-page-garden-designs span {
+	font-family: "Georgia";
+	font-size: 30px;
+	text-align: center;
+	position: absolute;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom:40px;
+}
+
+#project-page-garden-designs{
+	margin-right:auto;
+	margin-left:auto;
+	width: 900px;
+	position: relative;
+}
+
+.project-page-image {
+	float:left;
+	position: relative;
+	margin-left: 50px;
+	margin-top:40px;
+	border:solid black 10px;
+	display: block;	
 }
 
 
