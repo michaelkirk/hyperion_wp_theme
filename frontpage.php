@@ -4,32 +4,11 @@ Template Name: Hyperion Yard Front Page
 */
 ?>
 
-<head>
-  <!--Changes title in browser tab-->
-  <title>Hyperion Yard</title>
-	<link rel="stylesheet" href="/wp-content/themes/hyperion/reset.css">
-	<link rel="stylesheet" href="/wp-content/themes/hyperion/hyperion.css">
-</head>
-
-<body>
-  <div id="wrapper">
-		<div id="headerphoto">
-			<div id= "site-title">
-				HYPERION YARD
-			</div>
-		</div>
-		
-		<div id="menu">
-			<a href="/new-front-page/">HOME</a>
-			<a href="/about">ABOUT</a>
-			<a href="/newprojects">PROJECTS</a>
-			<a href="/resources">RESOURCES</a>
-			<a href= "/blog">BLOG</a>
-		</div>
+<?php include 'header.php'; ?>
 
 		<div id="upper-content">
-			<div id="project-box" class="content_column">							
-				<a href="/2011/11/22/a-place-to-grow-herbs/">
+			<div id="project-box" class="content-column">							
+				<a href="/garden-designs">
 					<div class="project-box-image">						
 						<img src="/wp-content/themes/hyperion/images/herbspiral.png"> 
 						<span>Garden Designs</span>
@@ -55,11 +34,34 @@ Template Name: Hyperion Yard Front Page
 							
 			</div>		
 		</div>
-		<div id="lower-content">
-			<div id="blog-content-title"><h2 class="content_column">RECENT UPDATES</h2></div>
-			<div id="blog-content" class="content_column">
-				<p> Blog content here</p>
-			</div>
-		</div>
-</body>
+		<div id="blog-content-title"><h2 class="content-column">RECENT UPDATES</h2></div>
+		<div id="lower-content">	
+			<div id="blog-content" class="content-column">
+				
+<?php
 
+// The Query
+query_posts( 'posts_per_page=1' );
+
+// The Loop
+while ( have_posts() ) : the_post();
+
+?><h2 id="post-<?php the_ID(); ?>">
+<a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>">
+<?php the_title(); ?></a></h2>
+<span class="time-author"><?php the_time('F jS, Y') ?> by <?php the_author() ?></span>
+	
+	<?php the_content(); ?>
+
+
+<?php
+endwhile;
+
+// Reset Query
+wp_reset_query();
+
+?>
+
+			</div>
+		</div> 
+<?php include 'footer.php'; ?>
