@@ -20,6 +20,8 @@ Template Name: Hyperion Yard Page
 			</span>		
 
 			<?php the_content() ?>
+				<hr>
+			<?php comments_template( '', true ); ?>
 		</div>
 	</div>
 
