@@ -300,7 +300,6 @@ h2 a:hover {
 .time-author, .entry-meta {
 	color: #888;
 	font-size: 12px;
-	margin-bottom: 8px;
 }
 
 .content-column a{
@@ -322,4 +321,29 @@ a{
 a:hover{
 	color:#435E13;
 }
+
+.wp-caption-text{
+	color: black;
+	min-height: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	font-size: 15px;
+	margin-bottom: 10px;
+	padding-bottom: 4px;
+	display: block;
+	position: relative;
+}
+
+p{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+h2.entry-title{
+	margin-top: 20px;
+}
+
+
+
 
