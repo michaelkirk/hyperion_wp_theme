@@ -26,7 +26,12 @@ body {
 	width: 100%;
 	opacity: 0.75;
 	filter:alpha(opacity=75);
+}
 
+#site-title a{	
+	color: black;
+	text-decoration: none;
+	
 }
 
 #menu { 
@@ -161,6 +166,7 @@ body {
 
 #blog-content {
 	background: white;
+	clear:both;
 }
 
 #blog-content-title{
@@ -342,6 +348,18 @@ p{
 
 h2.entry-title{
 	margin-top: 20px;
+}
+
+#blog-content .post:first-child h2{
+	margin-top: 5px;
+}
+
+.nav-previous{
+	float:left;
+}
+
+.nav-next{
+	float:right;
 }
 
 

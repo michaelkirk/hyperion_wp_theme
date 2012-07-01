@@ -1,5 +1,4 @@
 <div id="lower-content">
-<div id="blog-content" class="content-column">
 <?php
 /**
  * The loop that displays posts.
@@ -23,7 +22,7 @@
 
 <?php /* Display navigation to next/previous pages when applicable */ ?>
 <?php if ( $wp_query->max_num_pages > 1 ) : ?>
-	<div id="nav-above" class="navigation">
+	<div id="nav-above" class="navigation content-column">
 		<div class="nav-previous"><?php next_posts_link( __( '<span class="meta-nav">&larr;</span> Older posts', 'twentyten' ) ); ?></div>
 		<div class="nav-next"><?php previous_posts_link( __( 'Newer posts <span class="meta-nav">&rarr;</span>', 'twentyten' ) ); ?></div>
 	</div><!-- #nav-above -->
@@ -55,6 +54,7 @@
 	 *
 	 * Without further ado, the loop:
 	 */ ?>
+<div id="blog-content" class="content-column">
 <?php while ( have_posts() ) : the_post(); ?>
 
 <?php /* How to display all other posts. */ ?>
@@ -75,25 +75,10 @@
 				<?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'twentyten' ), 'after' => '</div>' ) ); ?>
 			</div><!-- .entry-content -->
 
-			<!--<div class="entry-utility">
-				<?php if ( count( get_the_category() ) ) : ?>
-					<span class="cat-links">
-						<?php printf( __( '<span class="%1$s">Posted in</span> %2$s', 'twentyten' ), 'entry-utility-prep entry-utility-prep-cat-links', get_the_category_list( ', ' ) ); ?>
-					</span></span>-->
-					<span class="meta-sep">|
-				<?php endif; ?>
-				<?php
-					$tags_list = get_the_tag_list( '', ', ' );
-					if ( $tags_list ):
-				?>
-					<span class="tag-links">
-						<?php printf( __( '<span class="%1$s">Tagged</span> %2$s', 'twentyten' ), 'entry-utility-prep entry-utility-prep-tag-links', $tags_list ); ?>
-					</span>
-					<span class="meta-sep">|</span>
-				<?php endif; ?>
+			<div class="entry-utility">
 				<span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', 'twentyten' ), __( '1 Comment', 'twentyten' ), __( '% Comments', 'twentyten' ) ); ?></span>
 				<?php edit_post_link( __( 'Edit', 'twentyten' ), '<span class="meta-sep">|</span> <span class="edit-link">', '</span>' ); ?>
-			<!-- </div> .entry-utility -->
+			</div>
 		</div><!-- #post-## -->
 
 		<?php comments_template( '', true ); ?>
@@ -102,13 +87,15 @@
 
 <?php endwhile; // End the loop. Whew. ?>
 
-</div>
 <?php /* Display navigation to next/previous pages when applicable */ ?>
-<?php if (  $wp_query->max_num_pages > 1 ) : ?>
-				<div id="nav-below" class="navigation content-column">
-					<div class="nav-previous"><?php next_posts_link( __( '<span class="meta-nav">&larr;</span> Older posts', 'twentyten' ) ); ?></div>
-					<div class="nav-next"><?php previous_posts_link( __( 'Newer posts <span class="meta-nav">&rarr;</span>', 'twentyten' ) ); ?></div>
-				</div><!-- #nav-below -->
-<?php endif; ?>
 </div> <!-- end blog content -->
+
+<?php /* Display navigation to next/previous pages when applicable */ ?>
+<?php if ( $wp_query->max_num_pages > 1 ) : ?>
+	<div id="nav-below" class="navigation content-column">
+		<div class="nav-previous"><?php next_posts_link( __( '<span class="meta-nav">&larr;</span> Older posts', 'twentyten' ) ); ?></div>
+		<div class="nav-next"><?php previous_posts_link( __( 'Newer posts <span class="meta-nav">&rarr;</span>', 'twentyten' ) ); ?></div>
+	</div><!-- #nav-above -->
+<?php endif; ?>
+
 </div> <!-- end lower content -->

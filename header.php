@@ -7,9 +7,9 @@
 
 <body>
   <div id="wrapper">
-		<div id="headerphoto">
-			<div id= "site-title">
-				HYPERION YARD
+		<div id="headerphoto">			
+		<div id= "site-title">
+				<a href="/">HYPERION YARD</a>
 			</div>
 		</div>
 		
